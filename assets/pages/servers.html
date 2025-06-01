@@ -6,14 +6,7 @@
     <title>Servers - CraftServer Hub</title>
     <link rel="icon" type="image/png" href="/CraftServer-Hub/assets/images/webicon.png">
     <link rel="stylesheet" href="/CraftServer-Hub/assets/css/styles.css">
-    <script>
-        // Asegurar que las imágenes carguen correctamente
-        document.querySelectorAll('img').forEach(img => {
-            if (!img.src.startsWith('http')) {
-                img.src = '/CraftServer-Hub' + img.src;
-            }
-        });
-    </script>
+    <script src="/CraftServer-Hub/assets/js/path-fix.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -51,7 +44,7 @@
 
         <section class="servers-grid">
             <div class="server-card fade-in">
-                <img src="/assets/images/vanilla.jpg" alt="Vanilla">
+                <img src="/CraftServer-Hub/assets/images/vanilla.jpg" alt="Vanilla">
                 <h3>Vanilla</h3>
                 <p>Original server software</p>
                 <div class="download-container">
@@ -59,8 +52,8 @@
                         Download <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="/assets/files/vanilla-1.21.1.zip" class="dropdown-item" download><i class="fas fa-download"></i> 1.21.1</a>
-                        <a href="/assets/files/vanilla-1.12.2.zip" class="dropdown-item" download><i class="fas fa-download"></i> 1.12.2</a>
+                        <a href="/CraftServer-Hub/assets/files/vanilla-1.21.1.zip" class="dropdown-item" download><i class="fas fa-download"></i> 1.21.1</a>
+                        <a href="/CraftServer-Hub/assets/files/vanilla-1.12.2.zip" class="dropdown-item" download><i class="fas fa-download"></i> 1.12.2</a>
                     </div>
                 </div>
             </div>
@@ -89,8 +82,7 @@
                     <div class="dropdown-content">
                         <a href="/CraftServer-Hub/assets/files/paper-1.21.1.zip" class="dropdown-item" download><i class="fas fa-download"></i> 1.21.1</a>
                         <a href="/CraftServer-Hub/assets/files/paper-1.12.2.zip" class="dropdown-item" download><i class="fas fa-download"></i> 1.12.2</a>
-                        <a href="/assets/files/paper-1.21.1.zip" class="dropdown-item" download><i class="fas fa-download"></i> 1.21.1</a>
-                        <a href="/assets/files/paper-1.12.2.zip" class="dropdown-item" download><i class="fas fa-download"></i> 1.12.2</a>
+
                     </div>
                 </div>
             </div>
