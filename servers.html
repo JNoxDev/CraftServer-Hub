@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servers - CraftServer Hub</title>
+    <link rel="icon" type="image/png" href="webicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="path-fix.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servers.html" class="active">Servers</a></li>
+                    <li><a href="plugins.html">Plugins</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu">
+                <button class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="mobile-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servers.html" class="active">Servers</a></li>
+                    <li><a href="plugins.html">Plugins</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <section class="hero-section fade-in">
+            <h1 class="hero-title">Available Servers</h1>
+            <p class="hero-subtitle">Download and install your favorite server software</p>
+        </section>
+
+        <section class="servers-grid">
+            <div class="server-card fade-in">
+                <img src="vanilla.jpg" alt="Vanilla">
+                <h3>Vanilla</h3>
+                <p>Original server software</p>
+                <div class="download-container">
+                    <button class="btn dropdown-btn" aria-expanded="false">
+                        Download <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="vanilla-1.21.1.zip" class="dropdown-item" download><i class="fas fa-download"></i> 1.21.1</a>
+                        <a href="vanilla-1.12.2.zip" class="dropdown-item" download><i class="fas fa-download"></i> 1.12.2</a>
+                    </div>
+                </div>
+            </div>
+            <div class="server-card fade-in">
+                <img src="spigot.png" alt="Spigot">
+                <h3>Spigot</h3>
+                <p>High-performance server software</p>
+                <div class="download-container">
+                    <button class="btn dropdown-btn" aria-expanded="false">
+                        Download <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="buildtools-executable.zip" class="dropdown-item" download><i class="fas fa-download"></i> BuildTools.exe</a>
+                        <a href="buildtools-default.zip" class="dropdown-item" download><i class="fas fa-download"></i> BuildTools.jar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="server-card fade-in">
+                <img src="paper.png" alt="Paper">
+                <h3>Paper</h3>
+                <p>Optimized version of Spigot</p>
+                <div class="download-container">
+                    <button class="btn dropdown-btn" aria-expanded="false">
+                        Download <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="paper-1.21.1.zip" class="dropdown-item" download><i class="fas fa-download"></i> 1.21.1</a>
+                        <a href="paper-1.12.2.zip" class="dropdown-item" download><i class="fas fa-download"></i> 1.12.2</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 CraftServer Hub | All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
