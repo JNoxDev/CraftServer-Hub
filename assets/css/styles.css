@@ -41,6 +41,11 @@ body {
     animation-delay: 0.4s;
 }
 
+/* Evitar que las cards desaparezcan después de la animación */
+.card.fade-in {
+    animation-fill-mode: forwards;
+}
+
 
 
 .header {

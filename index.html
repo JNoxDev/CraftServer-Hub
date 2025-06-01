@@ -7,11 +7,22 @@
     <link rel="icon" type="image/png" href="/CraftServer-Hub/assets/images/webicon.png">
     <link rel="stylesheet" href="/CraftServer-Hub/assets/css/styles.css">
     <script>
-        // Asegurar que las imágenes carguen correctamente
-        document.querySelectorAll('img').forEach(img => {
-            if (!img.src.startsWith('http')) {
-                img.src = '/CraftServer-Hub' + img.src;
-            }
+        // Asegurar que las imágenes y recursos carguen correctamente
+        document.addEventListener('DOMContentLoaded', function() {
+            // Actualizar rutas de imágenes
+            document.querySelectorAll('img').forEach(img => {
+                if (!img.src.startsWith('http')) {
+                    img.src = '/CraftServer-Hub' + img.src;
+                }
+            });
+
+            // Actualizar rutas de enlaces
+            document.querySelectorAll('a[href]').forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && !href.startsWith('http') && !href.startsWith('#') && !href.startsWith('mailto:')) {
+                    link.setAttribute('href', '/CraftServer-Hub' + href);
+                }
+            });
         });
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
