@@ -1,3 +1,4 @@
 / /CraftServer-Hub/index.html 200
 /CraftServer-Hub /CraftServer-Hub/index.html 200
 /CraftServer-Hub/* /CraftServer-Hub/:splat 200
+/* /CraftServer-Hub/:splat 200
